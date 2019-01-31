@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sc-learn-rest-client/sc-learn-rest-client.iml" filepath="$PROJECT_DIR$/sc-learn-rest-client/sc-learn-rest-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sc-learn-rest-server/sc-learn-rest-server.iml" filepath="$PROJECT_DIR$/sc-learn-rest-server/sc-learn-rest-server.iml" />
+    </modules>
+  </component>
+</project>

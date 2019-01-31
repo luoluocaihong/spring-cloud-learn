@@ -1,0 +1,5 @@
+
+‹squid:UselessImportCheck"`Remove this unused import 'org.springframework.boot.context.properties.ConfigurationProperties'.(¦Õ¸Ç8—ı†™Š-
+zsquid:UselessImportCheck"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8¹™–Š-
+ƒsquid:UselessImportCheck"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ĞÅ‡™Š-
+’squid:UselessImportCheck"hRemove this unused import 'com.luoluocaihong.springcloud.learn.rest.client.config.AppServiceProperties'.(Û›Ák8ĞÅ‡™Š-
