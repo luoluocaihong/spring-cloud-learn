@@ -25,7 +25,7 @@ public class ConsulServiceControl {
     private ConsulClient consulClient;
 
     //consul集群地址, ip1:port1,ip2,ip3:port3.... 端口不配置默认8500
-    @Value("${luoluocaihong.spring.cloud.consul.host}")
+    @Value("${luoluocaihong.spring.cloud.consul.cluster.nodes}")
     private String consulAddress;
 
     /**
