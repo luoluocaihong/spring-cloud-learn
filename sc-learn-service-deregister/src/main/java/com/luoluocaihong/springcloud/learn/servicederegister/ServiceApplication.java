@@ -17,8 +17,9 @@ public class ServiceApplication {
     public static void main(String[] args) throws InterruptedException {
         ApplicationContext ctx = SpringApplication.run(ServiceApplication.class, args);
 
-        //这样做可能此时ctx已经被关闭了。 因为Spring应用程序启动的时候已经注册了一个钩子(org.springframework.boot.SpringApplication.refreshContext中注册的,用于关闭应用上下文)
-        //改为在AutoDeregisterConfig中处理
+        //不需要多此一举,微服务优雅停机时是会自动注销的(org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.destroy)
+        //而且这样做可能此时ctx已经被关闭了。 因为Spring应用程序启动的时候已经注册了一个钩子(org.springframework.boot.SpringApplication.refreshContext中注册的,用于关闭应用上下文)
+        //如果consul客户端没有做自动注销,可以参考com.luoluocaihong.springcloud.learn.servicederegister.config.AutoDeregisterConfig实现（实现DisposableBean接口或者使用@PreDestroy注解）
 //        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
 //            @Override
 //            public void run() {
@@ -32,7 +33,7 @@ public class ServiceApplication {
 //        }));
 
 //        //for test
-//        Thread.sleep(10000);
-//        System.exit(1);
+        Thread.sleep(10000);
+        System.exit(1);
     }
 }
